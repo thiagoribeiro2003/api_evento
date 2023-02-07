@@ -27,17 +27,17 @@ app.post("/evento", (req, res) => {
   inserir(novoAluno, res);
 });
 
-app.put("/perfil/:id", (req, res) => {
+app.put("/evento/:id", (req, res) => {
   res.send(`ATUALIZANDO TODOS os dados dados do perfil`);
 });
 
-app.patch("/perfil/:id", (req, res) => {
+app.patch("/evento/:id", (req, res) => {
   const id = parseInt(req.params.id);
   const aluno = req.body;
   atualizar(id, aluno, res);
 });
 
-app.delete("/perfil/:id", (req, res) => {
+app.delete("/evento/:id", (req, res) => {
   const id = parseInt(req.params.id);
   excluir(id, res);
 });
