@@ -1,4 +1,6 @@
-import { ler, inserir, excluir } from "./src/aluno";
+import express from "express";
+import cors from "cors";
+import { ler, inserir, excluir } from "./src/aluno.js";
 
 const app = express();
 const porta = process.even.PORT || 3001;

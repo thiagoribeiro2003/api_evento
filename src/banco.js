@@ -1,3 +1,5 @@
+import mysql from "mysql2";
+
 const conexao = mysql.createConnection({
   host: "localhost",
   user: "root",
@@ -5,7 +7,7 @@ const conexao = mysql.createConnection({
   database: "escola",
 });
 
-conexao.connect((errp) => {
+conexao.connect((erro) => {
   if (erro) {
     console.error(`Erro ao conectaar: ${erro.message}`);
   } else {

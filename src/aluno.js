@@ -28,13 +28,13 @@ function inserir(evento, res) {
   });
 }
 
-function lerUm(email, res) {
-  const sql = "SELECT * FROM evento WHERE ";
-}
+// function lerUm(email, res) {
+//   const sql = "SELECT * FROM evento WHERE ";
+// }
 
-function atualizar(email, evento, res) {
-  const sql = "UPDATE evento SET ? WHERE ";
-}
+// function atualizar(email, evento, res) {
+//   const sql = "UPDATE evento SET ? WHERE ";
+// }
 
 function excluir(id, res) {
   const sql = "DELETE FROM perfil WHERE id = ?";
